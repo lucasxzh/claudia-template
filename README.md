@@ -1,10 +1,10 @@
 # Claudia — AI Habit Coach Template
 
-A Cursor-native habit tracking system powered by an AI accountability partner. Open the project in [Cursor](https://cursor.com) and start chatting — your coach will guide you through logging habits, reflecting on patterns, and maintaining streaks.
+A Cursor-native habit tracking system powered by an AI accountability partner. Open the project in your preferred AI code assistant and start chatting — your coach will guide you through logging habits, reflecting on patterns, and maintaining streaks.
 
 ## How It Works
 
-1. **Open this project in Cursor** and start a conversation.
+1. **Open this project in Cursor or Claude Code** and start a conversation.
 2. Your coach reads the dashboard, asks about your day, and logs your habits.
 3. Streaks, statuses, and patterns are tracked automatically.
 
@@ -28,7 +28,7 @@ tools/
     └── context.md            # Agent persona and behavior rules
 ```
 
-## Adding a New Habit
+## Adding a New Habit (You can just ask AI to do this)
 
 1. Create a folder under `habits/` (e.g. `habits/meditation/`).
 2. Add a `context.md` defining the habit's purpose, frequency, and rules.
