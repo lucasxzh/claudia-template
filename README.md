@@ -1,10 +1,18 @@
 # Claudia — AI Habit Coach Template
 
-A habit tracking system powered by an AI accountability partner. Open the project in your preferred AI code assistant and start chatting — your coach will guide you through logging habits, reflecting on patterns, and maintaining streaks.
+A habit tracking system powered by an AI accountability partner. Works out of the box with **Cursor**, **Claude Code**, and **Codex**. Open the project and start chatting — your coach will guide you through logging habits, reflecting on patterns, and maintaining streaks.
+
+## Supported Tools
+
+| Tool | Config File | Ready |
+| :--- | :--- | :---: |
+| [Cursor](https://cursor.com) | `.cursor/rules/context.md` | ✅ |
+| [Claude Code](https://docs.anthropic.com/en/docs/claude-code) | `CLAUDE.md` | ✅ |
+| [Codex](https://openai.com/index/introducing-codex/) | `AGENTS.md` | ✅ |
 
 ## How It Works
 
-1. **Open this project in Cursor or Claude Code** and start a conversation.
+1. **Open this project** in Cursor, Claude Code, or Codex.
 2. Your coach reads the dashboard, asks about your day, and logs your habits.
 3. Streaks, statuses, and patterns are tracked automatically.
 
@@ -23,9 +31,9 @@ habits/
     └── journal.md            # Freeform notes and reflections
 tools/
 └── sync_dashboard.py         # Syncs tracker data → dashboard.md
-.cursor/
-└── rules/
-    └── context.md            # Agent persona and behavior rules
+CLAUDE.md                     # Agent rules for Claude Code
+AGENTS.md                     # Agent rules for Codex
+.cursor/rules/context.md      # Agent rules for Cursor
 ```
 
 ## Adding a New Habit (You can just ask AI to do this)
@@ -48,6 +56,6 @@ tools/
 
 ## Customization
 
-- **Agent persona:** Edit `.cursor/rules/context.md` to change the coach's tone, philosophy, or interaction style.
+- **Agent persona:** Edit `CLAUDE.md`, `AGENTS.md`, or `.cursor/rules/context.md` (depending on your tool) to change the coach's tone, philosophy, or interaction style.
 - **Habit rules:** Each habit's `context.md` controls how the agent interacts with that specific habit (frequency, backup protocols, coaching output, etc.).
 - **Dashboard sync:** `tools/sync_dashboard.py` runs automatically after updates. No configuration needed.
