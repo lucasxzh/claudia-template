@@ -1,6 +1,6 @@
 # Claudia — AI Habit Coach Template
 
-A Cursor-native habit tracking system powered by an AI accountability partner. Open the project in your preferred AI code assistant and start chatting — your coach will guide you through logging habits, reflecting on patterns, and maintaining streaks.
+A habit tracking system powered by an AI accountability partner. Open the project in your preferred AI code assistant and start chatting — your coach will guide you through logging habits, reflecting on patterns, and maintaining streaks.
 
 ## How It Works
 
